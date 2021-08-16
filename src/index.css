@@ -5,29 +5,51 @@
 }
 
 body {
-    font-family: "Ubuntu";
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: #daddcf;
     color: hsl(100, 10, 10);
 }
 
-form {
-    margin: 1em;
-}
-
 header {
     text-align: center;
-    padding: 1em;
+    padding: 1rem;
 }
 
 header p {
-    font-size: 60%;
-    padding: 1em;
+    font-size: 80%;
+    padding-bottom: 1rem;
+}
+
+.CreateProduct {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding-left: 3rem;
+}
+
+.CreateProduct * {
+    margin: 0.25rem;
 }
 
 .Products {
     padding: 1em;
+    width: 80%;
+    margin: 0.5rem auto;
+    border-collapse: collapse;
 }
 
-input, button {
-    display: block;
+tbody * {
+    border: 1px solid #333;
+    padding: 0.25rem;
 }
+
+th {
+    text-align: left;
+}
+
+button {
+    margin: 0.15rem;
+    padding: 0.35rem;
+}
+
