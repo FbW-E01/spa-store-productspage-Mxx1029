@@ -1,0 +1,33 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Ubuntu";
+    background: #daddcf;
+    color: hsl(100, 10, 10);
+}
+
+form {
+    margin: 1em;
+}
+
+header {
+    text-align: center;
+    padding: 1em;
+}
+
+header p {
+    font-size: 60%;
+    padding: 1em;
+}
+
+.Products {
+    padding: 1em;
+}
+
+input, button {
+    display: block;
+}
