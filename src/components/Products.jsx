@@ -5,6 +5,7 @@ export default function Products() {
     const [ products, setProducts ] = useProductsContext();
     const [ locale ] = useLocaleContext();
 
+    // all 3 functions work with whatever, because they are given the right argument (item) in the return
     function editName(productName) {
         const newName = prompt("Enter new name", productName.name);
         const updatedListWithNewName = 
@@ -61,6 +62,7 @@ export default function Products() {
                                 ? "€" : null}
                             </td>
                             <td>
+                                {/* all 3 button functions need to be given "item" from the products.map above to work outside of the return, here they are called, it's not a reference */}
                                 <button onClick={() => editName(item)}>
                                     Edit name
                                 </button>
